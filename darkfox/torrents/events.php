@@ -7,7 +7,7 @@
 
 namespace darkfox\torrents;
 
-class events
+class event
 {
     /**
      * Listen to core.user_setup event
@@ -25,3 +25,4 @@ class events
         $user->add_permission('u_darkfox_torrents', true);
     }
 }
+

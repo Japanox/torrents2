@@ -21,7 +21,7 @@
     },
     "extra": {
         "phpbb": {
-            "events": {
+            "event": {
                 "core.user_setup": "\\darkfox\\torrents\\events::core_user_setup"
             },
             "listeners": {
