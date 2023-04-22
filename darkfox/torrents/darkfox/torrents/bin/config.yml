@@ -1,0 +1,6 @@
+extension:
+    name: darkfox/torrents
+    root_path: ../..
+    phpbb_path: vendor/phpbb/phpbb/
+    composer_autoload: vendor/autoload.php
+    migrations_namespace: darkfox\torrents\migrations
