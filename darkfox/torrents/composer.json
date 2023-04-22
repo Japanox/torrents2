@@ -1,0 +1,32 @@
+{
+    "name": "darkfox/torrents",
+    "description": "Extensão de torrents para o phpBB.",
+    "type": "phpbb-extension",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "darkfox",
+            "email": "seu_email@example.com",
+            "homepage": "https://jeveuxsortir.com/forumx"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.7",
+        "phpbb/phpbb": "~3.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "darkfox\\torrents\\": "src/"
+        }
+    },
+    "extra": {
+        "phpbb": {
+            "events": {
+                "core.user_setup": "\\darkfox\\torrents\\events::core_user_setup"
+            },
+            "listeners": {
+                "darkfox.torrents.listener": "\\darkfox\\torrents\\listener::listen"
+            }
+        }
+    }
+}

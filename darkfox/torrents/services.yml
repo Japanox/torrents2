@@ -1,0 +1,17 @@
+services:
+    darkfox.torrents.controller.torrents_controller:
+        class: darkfox\torrents\controller\torrents_controller
+        arguments:
+            - '@user'
+            - '@request'
+            - '@config'
+            - '@template'
+            - '@phpbb.dbal.driver'
+        public: true
+    darkfox.torrents.acp.torrents_module:
+        class: darkfox\torrents\acp\torrents_module
+        arguments:
+            - '@config'
+            - '@user'
+            - '@template'
+        public: true
